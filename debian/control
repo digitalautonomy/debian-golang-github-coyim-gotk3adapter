@@ -6,7 +6,7 @@ Uploaders: Ola Bini <debian@olabini.se>
 Build-Depends: debhelper (>= 11),
                dh-golang,
                golang-any,
-               golang-github-gotk3-gotk3-dev
+               golang-github-gotk3-gotk3-dev (>= 0.4.0+git20200217.d9d1e28)
 Standards-Version: 4.2.1
 Homepage: https://github.com/coyim/gotk3adapter
 Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-coyim-gotk3adapter
