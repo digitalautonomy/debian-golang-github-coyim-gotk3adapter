@@ -1,0 +1,23 @@
+Source: golang-github-coyim-gotk3adapter
+Section: devel
+Priority: optional
+Maintainer: Ola Bini <debian@olabini.se>
+Uploaders: Ola Bini <debian@olabini.se>
+Build-Depends: debhelper (>= 11),
+               dh-golang,
+               golang-any,
+               golang-github-gotk3-gotk3-dev
+Standards-Version: 4.2.1
+Homepage: https://github.com/coyim/gotk3adapter
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-coyim-gotk3adapter
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-coyim-gotk3adapter.git
+XS-Go-Import-Path: github.com/coyim/gotk3adapter
+Testsuite: autopkgtest-pkg-go
+
+Package: golang-github-coyim-gotk3adapter-dev
+Architecture: all
+Depends: ${misc:Depends},
+         golang-github-gotk3-gotk3-dev
+Description: Contains adapters and interfaces for gotk3 in order to make testing possible.
+ gotk3adapter Contains adapters and interfaces for gotk3 in order to make
+ testing possible.

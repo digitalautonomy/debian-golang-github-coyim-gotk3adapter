@@ -1,0 +1,5 @@
+golang-github-coyim-gotk3adapter (0.0~git20200217.460674b-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: 999999)
+
+ -- Ola Bini <debian@olabini.se>  Tue, 18 Feb 2020 19:55:30 +0100
