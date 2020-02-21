@@ -14,7 +14,7 @@ build:
     - chmod 644 ~/.ssh/known_hosts
     - mkdir ~/deps
     - scp 'repo@debian.autonomia.digital:/home/repo/packages/upload/golang-github-gotk3-gotk3-dev*.deb' ~/deps
-    - dpkg -f -i ~/deps/*.deb
+    - dpkg -i ~/deps/*.deb
   script:
     - gbp buildpackage --git-ignore-branch
     - mkdir debian_build
