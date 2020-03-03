@@ -1,4 +1,4 @@
-golang-github-coyim-gotk3adapter (0.0~git20200303.8ad62a9-1) UNRELEASED; urgency=medium
+golang-github-coyim-gotk3adapter (0.0~git20200303.8ad62a9-1) unstable; urgency=medium
 
   [ Ola Bini ]
   * Initial release (Closes: 999999)
