@@ -15,6 +15,8 @@ build:
     - mkdir ~/deps
     - scp -P 4242 'repo@debian.autonomia.digital:/home/repo/packages/upload/golang-github-gotk3-gotk3-dev*.deb' ~/deps
     - dpkg -i ~/deps/*.deb
+  only:
+    - master
   script:
     - gbp buildpackage --git-ignore-branch --git-no-pristine-tar
     - mkdir debian_build
