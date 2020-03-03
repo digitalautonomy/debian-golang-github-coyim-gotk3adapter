@@ -1,5 +1,18 @@
-golang-github-coyim-gotk3adapter (0.0~git20200217.460674b-1) UNRELEASED; urgency=medium
+golang-github-coyim-gotk3adapter (0.0~git20200303.8ad62a9-1) UNRELEASED; urgency=medium
 
+  [ Ola Bini ]
   * Initial release (Closes: 999999)
+  * New upstream release (8ad62a9)
+  * Update version of dependency on gotk3
 
- -- Ola Bini <debian@olabini.se>  Tue, 18 Feb 2020 19:55:30 +0100
+  [ Sandy ]
+  * Add gitlab CI to make automatic building of the debian package
+
+  [ Ola Bini ]
+  * Add initial dependencies for building gotk3adapter
+  * No good -f force flag
+  * Update buildpackage to not use pristine-tar
+  * Try without a weird .NET dependency
+  * Use the new debian server
+
+ -- Ola Bini <debian@olabini.se>  Tue, 03 Mar 2020 16:46:38 +0100
