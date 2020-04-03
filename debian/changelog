@@ -1,3 +1,13 @@
+golang-github-coyim-gotk3adapter (0.0~git20200403.728d69a-1) UNRELEASED; urgency=medium
+
+  * New upstream release (728d69a)
+  * Only build master
+  * Don't sign stuff, and change uploader
+  * Copy all generated files, not just .deb
+  * Try running updating of packages on every build
+
+ -- Ola Bini <debian@olabini.se>  Fri, 03 Apr 2020 22:30:21 +0200
+
 golang-github-coyim-gotk3adapter (0.0~git20200303.8ad62a9-1) unstable; urgency=medium
 
   [ Ola Bini ]
