@@ -1,4 +1,4 @@
-golang-github-coyim-gotk3adapter (0.0~git20200403.728d69a-1) UNRELEASED; urgency=medium
+golang-github-coyim-gotk3adapter (0.0~git20200403.728d69a-1) unstable; urgency=medium
 
   * New upstream release (728d69a)
   * Only build master
