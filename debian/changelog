@@ -1,4 +1,4 @@
-golang-github-coyim-gotk3adapter (0.0~git20230124.2f8954e-1) UNRELEASED; urgency=medium
+golang-github-coyim-gotk3adapter (0.0~git20230124.2f8954e-1) unstable; urgency=medium
 
   [ CAD Debian Packager ]
   * New upstream release (2f8954e)
