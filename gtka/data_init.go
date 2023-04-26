@@ -1,8 +1,8 @@
 package gtka
 
 import (
-	"github.com/gotk3/gotk3/gtk"
 	"github.com/coyim/gotk3adapter/gtki"
+	"github.com/gotk3/gotk3/gtk"
 )
 
 func init() {
@@ -64,4 +64,23 @@ func init() {
 	gtki.STYLE_PROVIDER_PRIORITY_SETTINGS = gtki.StyleProviderPriority(gtk.STYLE_PROVIDER_PRIORITY_SETTINGS)
 	gtki.STYLE_PROVIDER_PRIORITY_APPLICATION = gtki.StyleProviderPriority(gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
 	gtki.STYLE_PROVIDER_PRIORITY_USER = gtki.StyleProviderPriority(gtk.STYLE_PROVIDER_PRIORITY_USER)
+
+	gtki.MESSAGE_INFO = gtki.MessageType(gtk.MESSAGE_INFO)
+	gtki.MESSAGE_WARNING = gtki.MessageType(gtk.MESSAGE_WARNING)
+	gtki.MESSAGE_QUESTION = gtki.MessageType(gtk.MESSAGE_QUESTION)
+	gtki.MESSAGE_ERROR = gtki.MessageType(gtk.MESSAGE_ERROR)
+	gtki.MESSAGE_OTHER = gtki.MessageType(gtk.MESSAGE_OTHER)
+
+	gtki.JUSTIFY_LEFT = gtki.Justification(gtk.JUSTIFY_LEFT)
+	gtki.JUSTIFY_RIGHT = gtki.Justification(gtk.JUSTIFY_RIGHT)
+	gtki.JUSTIFY_CENTER = gtki.Justification(gtk.JUSTIFY_CENTER)
+	gtki.JUSTIFY_FILL = gtki.Justification(gtk.JUSTIFY_FILL)
+
+	gtki.SIZE_GROUP_NONE = gtki.SizeGroupMode(gtk.SIZE_GROUP_NONE)
+	gtki.SIZE_GROUP_HORIZONTAL = gtki.SizeGroupMode(gtk.SIZE_GROUP_HORIZONTAL)
+	gtki.SIZE_GROUP_VERTICAL = gtki.SizeGroupMode(gtk.SIZE_GROUP_VERTICAL)
+	gtki.SIZE_GROUP_BOTH = gtki.SizeGroupMode(gtk.SIZE_GROUP_BOTH)
+
+	gtki.WINDOW_TOPLEVEL = gtki.WindowType(gtk.WINDOW_TOPLEVEL)
+	gtki.WINDOW_POPUP = gtki.WindowType(gtk.WINDOW_POPUP)
 }

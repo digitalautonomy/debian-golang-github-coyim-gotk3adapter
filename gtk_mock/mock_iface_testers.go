@@ -7,6 +7,7 @@ func init() {
 	gtki.AssertAboutDialog(&MockAboutDialog{})
 	gtki.AssertAccelGroup(&MockAccelGroup{})
 	gtki.AssertAdjustment(&MockAdjustment{})
+	gtki.AssertAllocation(&MockAllocation{})
 	gtki.AssertApplication(&MockApplication{})
 	gtki.AssertApplicationWindow(&MockApplicationWindow{})
 	gtki.AssertAssistant(&MockAssistant{})
@@ -24,6 +25,8 @@ func init() {
 	gtki.AssertDialog(&MockDialog{})
 	gtki.AssertEntry(&MockEntry{})
 	gtki.AssertEventBox(&MockEventBox{})
+	gtki.AssertExpander(&MockExpander{})
+	gtki.AssertButtonBox(&MockButtonBox{})
 	gtki.AssertFileChooserDialog(&MockFileChooserDialog{})
 	gtki.AssertGrid(&MockGrid{})
 	gtki.AssertHeaderBar(&MockHeaderBar{})
@@ -60,4 +63,5 @@ func init() {
 	gtki.AssertTreeViewColumn(&MockTreeViewColumn{})
 	gtki.AssertWidget(&MockWidget{})
 	gtki.AssertWindow(&MockWindow{})
+	gtki.AssertIconTheme(&MockIconTheme{})
 }

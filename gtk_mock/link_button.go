@@ -14,5 +14,8 @@ func (*MockLinkButton) SetUri(uri string) {
 }
 
 func (*MockLinkButton) SetImage(v gtki.Widget) {
+}
 
+func (*MockLinkButton) GetLabel() (string, error) {
+	return "", nil
 }

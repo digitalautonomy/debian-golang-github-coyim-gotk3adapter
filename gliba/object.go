@@ -3,8 +3,8 @@ package gliba
 import (
 	"reflect"
 
-	"github.com/gotk3/gotk3/glib"
 	"github.com/coyim/gotk3adapter/glibi"
+	"github.com/gotk3/gotk3/glib"
 )
 
 type Object struct {
@@ -18,7 +18,7 @@ func WrapObjectSimple(v *glib.Object) *Object {
 	return &Object{v}
 }
 
-func unwrapObject(v glibi.Object) *glib.Object {
+func UnwrapObject(v glibi.Object) *glib.Object {
 	if v == nil {
 		return nil
 	}
@@ -146,16 +146,16 @@ func FixupFunction(v interface{}) interface{} {
 	panic("Shouldn't happen")
 }
 
-func (v *Object) Connect(v1 string, v2 interface{}, v3 ...interface{}) (glibi.SignalHandle, error) {
+func (v *Object) Connect(v1 string, v2 interface{}) glibi.SignalHandle {
 	nv2 := FixupFunction(v2)
-	vx1, vx2 := v.Object.Connect(v1, nv2, FixupArray(v3)...)
-	return glibi.SignalHandle(vx1), vx2
+	vx1 := v.Object.Connect(v1, nv2)
+	return glibi.SignalHandle(vx1)
 }
 
-func (v *Object) ConnectAfter(v1 string, v2 interface{}, v3 ...interface{}) (glibi.SignalHandle, error) {
+func (v *Object) ConnectAfter(v1 string, v2 interface{}) glibi.SignalHandle {
 	nv2 := FixupFunction(v2)
-	vx1, vx2 := v.Object.ConnectAfter(v1, nv2, FixupArray(v3)...)
-	return glibi.SignalHandle(vx1), vx2
+	vx1 := v.Object.ConnectAfter(v1, nv2)
+	return glibi.SignalHandle(vx1)
 }
 
 func (v *Object) Emit(v1 string, v2 ...interface{}) (interface{}, error) {
@@ -169,7 +169,7 @@ func (v *Object) GetProperty(v1 string) (interface{}, error) {
 }
 
 func (v *Object) SetProperty(v1 string, v2 interface{}) error {
-	return v.Object.SetProperty(v1, WrapAllGuard(v2))
+	return v.Object.SetProperty(v1, UnwrapAllGuard(v2))
 }
 
 func (v *Object) Ref() {

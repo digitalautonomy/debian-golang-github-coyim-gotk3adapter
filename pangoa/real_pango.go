@@ -16,3 +16,7 @@ func (*RealPango) AsFontDescription(v interface{}) pangoi.FontDescription {
 
 	return wrapFontDescriptionSimple(v.(*pango.FontDescription))
 }
+
+func (*RealPango) AttrListNew() pangoi.AttrList {
+	return WrapAttrListSimple(pango.AttrListNew())
+}

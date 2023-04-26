@@ -27,6 +27,10 @@ func (*Mock) ApplicationNew(appId string, flags glibi.ApplicationFlags) (gtki.Ap
 	return nil, nil
 }
 
+func (*Mock) ApplicationWindowNew(gtki.Application) (gtki.ApplicationWindow, error) {
+	return nil, nil
+}
+
 func (*Mock) AssistantNew() (gtki.Assistant, error) {
 	return nil, nil
 }
@@ -40,6 +44,10 @@ func (*Mock) BuilderNewFromResource(string) (gtki.Builder, error) {
 }
 
 func (*Mock) CellRendererTextNew() (gtki.CellRendererText, error) {
+	return nil, nil
+}
+
+func (*Mock) ButtonNewWithLabel(string) (gtki.Button, error) {
 	return nil, nil
 }
 
@@ -87,6 +95,18 @@ func (*Mock) EventBoxNew() (gtki.EventBox, error) {
 	return nil, nil
 }
 
+func (*Mock) ButtonBoxNew(gtki.Orientation) (gtki.ButtonBox, error) {
+	return nil, nil
+}
+
+func (*Mock) PopoverNew(gtki.Widget) (gtki.Popover, error) {
+	return nil, nil
+}
+
+func (*Mock) BoxNew(gtki.Orientation, int) (gtki.Box, error) {
+	return nil, nil
+}
+
 func (*Mock) FileChooserDialogNewWith2Buttons(title string, parent gtki.Window, action gtki.FileChooserAction, first_button_text string, first_button_id gtki.ResponseType, second_button_text string, second_button_id gtki.ResponseType) (gtki.FileChooserDialog, error) {
 	return nil, nil
 }
@@ -131,6 +151,14 @@ func (*Mock) LabelNew(str string) (gtki.Label, error) {
 }
 
 func (*Mock) ListStoreNew(types ...glibi.Type) (gtki.ListStore, error) {
+	return nil, nil
+}
+
+func (*Mock) TreeStoreNew(types ...glibi.Type) (gtki.TreeStore, error) {
+	return nil, nil
+}
+
+func (*Mock) MenuBarNew() (gtki.MenuBar, error) {
 	return nil, nil
 }
 
@@ -187,4 +215,55 @@ func (*Mock) WindowSetDefaultIcon(icon gdki.Pixbuf) {
 
 func (*Mock) SettingsGetDefault() (gtki.Settings, error) {
 	return nil, nil
+}
+
+func (*Mock) SeparatorNew(gtki.Orientation) (gtki.Separator, error) {
+	return nil, nil
+}
+
+func (*Mock) EntryCompletionNew() (gtki.EntryCompletion, error) {
+	return nil, nil
+}
+
+func (*Mock) StatusIconNew() (gtki.StatusIcon, error) {
+	return nil, nil
+}
+
+func (*Mock) StatusIconNewFromFile(filename string) (gtki.StatusIcon, error) {
+	return nil, nil
+}
+
+func (*Mock) StatusIconNewFromIconName(iconName string) (gtki.StatusIcon, error) {
+	return nil, nil
+}
+
+func (*Mock) StatusIconNewFromPixbuf(pixbuf gdki.Pixbuf) (gtki.StatusIcon, error) {
+	return nil, nil
+}
+
+func (*Mock) GetWidgetBuildableName(widget gtki.Widget) (string, error) {
+	return "", nil
+}
+
+func (*Mock) InfoBarSetRevealed(infobar gtki.InfoBar, setting bool) {
+}
+
+func (*Mock) InfoBarGetRevealed(infobar gtki.InfoBar) bool {
+	return false
+}
+
+func (*Mock) WindowNew(wt gtki.WindowType) (gtki.Window, error) {
+	return nil, nil
+}
+
+func (*Mock) IconThemeNew() (gtki.IconTheme, error) {
+	return nil, nil
+}
+
+func (*Mock) IconThemeGetDefault() gtki.IconTheme {
+	return nil
+}
+
+func (*Mock) IconThemeGetForScreen(s gdki.Screen) gtki.IconTheme {
+	return nil
 }
