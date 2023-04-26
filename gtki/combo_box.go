@@ -9,6 +9,9 @@ type ComboBox interface {
 	GetActiveID() string
 	SetActive(int)
 	SetModel(TreeModel)
+	SetIDColumn(int)
+	SetEntryTextColumn(int)
+	GetToggleButton() (Button, error)
 }
 
 func AssertComboBox(_ ComboBox) {}

@@ -45,3 +45,38 @@ func (a *MockAssistant) SetPageComplete(page gtki.Widget, complete bool) {
 func (a *MockAssistant) GetPageComplete(page gtki.Widget) bool {
 	return true
 }
+
+func (a *MockAssistant) AddActionWidget(child gtki.Widget) {
+}
+
+func (a *MockAssistant) RemoveActionWidget(child gtki.Widget) {
+}
+
+func (a *MockAssistant) UpdateButtonsState() {
+}
+
+func (a *MockAssistant) SetPageTitle(page gtki.Widget, title string) {
+}
+
+func (a *MockAssistant) GetButtons() []gtki.Button {
+	return nil
+}
+
+func (a *MockAssistant) GetButtonSizeGroup() (gtki.SizeGroup, error) {
+	return nil, nil
+}
+
+func (a *MockAssistant) GetHeaderBar() (gtki.HeaderBar, error) {
+	return nil, nil
+}
+
+func (a *MockAssistant) GetSidebar() (gtki.Box, error) {
+	return nil, nil
+}
+
+func (a *MockAssistant) GetNotebook() (gtki.Notebook, error) {
+	return nil, nil
+}
+
+func (a *MockAssistant) HideBottomActionArea() {
+}

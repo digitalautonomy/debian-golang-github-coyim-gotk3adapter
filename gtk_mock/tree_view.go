@@ -6,6 +6,14 @@ type MockTreeView struct {
 	MockContainer
 }
 
+func (*MockTreeView) RowExpanded(v1 gtki.TreePath) bool {
+	return false
+}
+
+func (*MockTreeView) ExpandRow(v1 gtki.TreePath, v2 bool) bool {
+	return false
+}
+
 func (*MockTreeView) CollapseRow(v1 gtki.TreePath) bool {
 	return false
 }
@@ -55,4 +63,7 @@ func (*MockTreeView) GetModel() (gtki.TreeModel, error) {
 }
 
 func (*MockTreeView) SetModel(gtki.TreeModel) {
+}
+
+func (*MockTreeView) SetCursorOnCell(gtki.TreePath, gtki.TreeViewColumn, gtki.CellRenderer, bool) {
 }
