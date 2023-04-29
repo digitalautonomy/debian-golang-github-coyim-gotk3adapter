@@ -1,3 +1,13 @@
+golang-github-coyim-gotk3adapter (0.0.2-1) UNRELEASED; urgency=medium
+
+  [ CAD Debian Packager ]
+  * New upstream release (6ec7db4)
+
+  [ Ola Bini ]
+  * Add dependency on gotk3extra
+
+ -- CAD Debian Packager <debian-packager@autonomia.digital>  Sat, 29 Apr 2023 23:44:04 +0000
+
 golang-github-coyim-gotk3adapter (0.0~git20230124.2f8954e-1) unstable; urgency=medium
 
   [ CAD Debian Packager ]
